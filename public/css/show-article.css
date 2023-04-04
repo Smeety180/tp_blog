@@ -35,3 +35,13 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+#formComment {
+    left: -104rem;
+    position: relative;
+}
+
+.CommentArea {
+    width: 191px;
+    height: 135px;
+}

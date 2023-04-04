@@ -53,6 +53,14 @@ $auteur = $userRepository->getById($articleToShow->getUserId());
             <div class="action">
                 <a class="btn btn-secondary" href="/delete-article.php?id=<?= $articleId ?>">Supprimer</a>
                 <a class="btn btn-primary" href="/form-article.php?id=<?= $articleId ?>">Editer l'article</a>
+                <form class="btn btn-secondary" id="formComment" method="post" action="$_POST">
+                    <label for="nom">Nom:</label>
+                    <input type="text" name="text">
+                    <br><br>
+                    <textarea class="CommentArea" name="Comments" placeholder="Ajouter un commentaire"  ></textarea>
+                    <br><br>
+                    <input class="btn btn-secondary" type="submit" value="Envoyer">
+                </form>
             </div>
             <?php endif; ?>
         </div>
